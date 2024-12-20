@@ -1,4 +1,7 @@
-Description:
+**TechHive - Online Electronic Store
+**
+
+
 TechHive is a modern multi-page website for an online electronics store, built using only HTML and CSS. It offers a seamless user experience with pages dedicated to product listings, individual product details, cart, checkout, user accounts, and more. The design focuses on a dark theme with an elegant layout for showcasing electronics like laptops and smartphones.
 
 Features:
