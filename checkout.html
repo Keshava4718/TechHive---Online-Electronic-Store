@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechHive - Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="icon" type="image/png" href="Icons/favicon.png">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">TechHive</div>
+            <div class="location">Deliver to <span class="highlight">India</span></div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products" />
+            </div>
+            <div class="actions">
+                <a href="my_cart.html" target="_blank" class="cart">Cart</a>
+                <a href="my_acc.html" target="_blank" class="signin">My Account</a>
+            </div>
+        </nav>
+    </header>
+    <section class="checkout">
+        <!-- Checkout Banner -->
+    
+        <div class="container">
+            <!-- Payment Method Section -->
+            <div class="section payment-method">
+                <h2 class="section-title">Payment Method</h2>
+                <div class="payment-options">
+                    <div class="payment-option">
+                        <input type="radio" id="upi" name="payment-method" checked>
+                        <label for="upi">UPI Payment</label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="credit-card" name="payment-method">
+                        <label for="credit-card">Credit/Debit Card</label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="cod" name="payment-method">
+                        <label for="cod">Cash on Delivery</label>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Order Summary Section -->
+            <div class="section order-summary">
+                <h2 class="section-title">Order Summary</h2>
+                <div class="order-details">
+                    <div class="order-item">
+                        <span>SAMSUNG Galaxy S24 Ultra 5G - Titanium Gray, 512 GB - 12 GB RAM (1)</span>
+                        <span>₹1,24,999</span>
+                    </div>
+                    <div class="order-item">
+                        <span>Apple iPhone 15 Pro - 128 GB - Black Titanium (1)</span>
+                        <span>₹1,49,999</span>
+                    </div>
+                    <div class="order-item">
+                        <span>Tax</span>
+                        <span>₹49,499</span>
+                    </div>
+                    <div class="order-item">
+                        <span>Shipping</span>
+                        <span>₹500</span>
+                    </div>
+                    <div class="order-item total">
+                        <span>Total</span>
+                        <span>₹3,24,997</span>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Coupons Section -->
+            <div class="section coupons">
+                <h2 class="section-title">Have a Coupon?</h2>
+                <div class="coupon-input">
+                    <input type="text" id="coupon-code" placeholder="Enter your coupon code">
+                    <button id="apply-coupon">Apply</button>
+                </div>
+            </div>
+    
+            <!-- Review & Confirm Section -->
+            <div class="section review-confirm">
+                <h2 class="section-title">Review & Confirm</h2>
+                <div class="order-review">
+                    <p><strong>Payment Method:</strong> Credit/Debit Card</p>
+                    <p><strong>Order Total:</strong> ₹3,24,997</p>
+                </div>
+                <button id="confirm-order" class="confirm-order">Confirm Order</button>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+            <!-- Connect with Us Section -->
+            <div class="footer-section connect">
+                <h3>Connect with Us</h3>
+                <form>
+                    <label for="email">Enter Email ID</label>
+                    <input type="email" id="email" placeholder="Your Email" />
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div class="social-icons">
+                    <a href="#"><img src="/Icons/YT_RED.png" alt="YouTube" /></a>
+                    <a href="#"><img src="/Icons/FB_BLUE.png" alt="Facebook" /></a>
+                    <a href="#"><img src="/Icons/insta.webp" alt="Instagram" /></a>
+                    <a href="#"><img src="/Icons/linkedin-app-white-icon.webp" alt="LinkedIn" /></a>
+                    <a href="#"><img src="/Icons/twitter.png" alt="Twitter" /></a>
+                </div>
+                <p>© Copyright 2023 TechHive. All rights reserved.</p>
+            </div>
+
+            <!-- Useful Links Section -->
+            <div class="footer-section links">
+                <h3>Useful Links</h3>
+                <div class="list-columns">
+                    <ul>
+                        <li><a href="#">About TechHive</a></li>
+                        <li><a href="#">Help & Support</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Store Locator</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">TechHive Careers</a></li>
+                        <li><a href="#">Buying Guides</a></li>
+                        <li><a href="#">Franchise Opportunities</a></li>
+                        <li><a href="#">Site Map</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Products Section -->
+            <div class="footer-section products">
+                <h3>Products</h3>
+                <div class="list-columns">
+                    <ul>
+                        <li><a href="#">Smartphones</a></li>
+                        <li><a href="#">Laptops</a></li>
+                        <li><a href="#">Home Appliances</a></li>
+                        <li><a href="#">Gaming Consoles</a></li>
+                        <li><a href="#">Cameras</a></li>
+                        <li><a href="#">Audio Devices</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Wearables</a></li>
+                        <li><a href="#">Smart Home Devices</a></li>
+                        <li><a href="#">Kitchen Appliances</a></li>
+                        <li><a href="#">Fitness Gear</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">VR Devices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+
+</html>

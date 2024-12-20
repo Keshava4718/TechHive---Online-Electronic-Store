@@ -1,0 +1,698 @@
+/* styles.css */
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a1a; /* Dark background to match the vibe */
+    color: #ccc;
+}
+
+header {
+    background: linear-gradient(145deg, #2e2e2e, #1c1c1c); /* Metallic gradient */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #00bcd4; /* Futuristic teal color for the logo */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 10px #00bcd4;
+}
+
+.location {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.location .highlight {
+    color: #00bcd4;
+    font-weight: bold;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    border: 1px solid #444;
+    border-radius: 20px;
+    background-color: #333;
+    color: #ccc;
+    width: 250px;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-bar input::placeholder {
+    color: #aaa;
+}
+
+.search-bar input:focus {
+    outline: none;
+    background-color: #444;
+    border-color: #00bcd4;
+    color: #fff;
+    box-shadow: 0 0 5px #00bcd4;
+}
+
+.actions a {
+    color: #ccc;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+    border: 1px solid #555;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #3a3a3a, #202020);
+    box-shadow: inset -2px -2px 5px #444, inset 2px 2px 5px #1a1a1a;
+    transition: all 0.3s ease;
+}
+
+.actions a:hover {
+    background-color: #00bcd4;
+    color: #fff;
+    border-color: #00bcd4;
+    box-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4;
+}
+/* Hero Section */
+.hero {
+    position: relative;
+    background: url(Backgrounds/hero_background.png) no-repeat center/cover; /* Replace with your banner image */
+    height: 450px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent dark overlay */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the left */
+    padding: 0 5%;
+}
+
+.hero-text {
+    color: #fff;
+    max-width: 600px; /* Restricts the width of the text block */
+    text-align: left; /* Aligns text to the left */
+}
+
+.hero-text h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.8);
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #ddd;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.cta-buttons a {
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Styling for Primary Button */
+.cta-primary {
+    background-color: transparent;
+    color: #00bcd4;
+    border: 2px solid #00bcd4;
+    position: relative;
+}
+
+.cta-primary:hover {
+    background-color: #00bcd4;
+    color: #fff;
+    border: 2px solid #00bcd4;
+    box-shadow: 0 4px 15px rgba(0, 188, 212, 0.5);
+}
+
+/* Styling for Secondary Button */
+.cta-secondary {
+    background-color: transparent;
+    color: #00bcd4;
+    border: 2px solid #00bcd4;
+    position: relative;
+}
+
+.cta-secondary:hover {
+    background-color: #00bcd4;
+    color: #fff;
+    border: 2px solid #00bcd4;
+    box-shadow: 0 4px 15px rgba(0, 188, 212, 0.5);
+}
+
+/* Categories Section */
+/* Browse By Categories Section */
+.browse-by-categories {
+    padding: 2rem;
+    background-color: #1a1a1a; /* Match the overall dark theme */
+    color: #ccc; /* Light text for readability */
+    text-align: center; /* Center align the heading */
+    border-top: 1px solid #333; /* Subtle separation */
+}
+
+.browse-by-categories h2 {
+    font-size: 2rem; /* Larger font for section title */
+    color: #00bcd4; /* Highlighted teal color for the title */
+    margin-bottom: 1.5rem;
+}
+
+/* Category Bar (Reuse the same styles) */
+.category-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    justify-content: center; /* Center the buttons */
+    margin: 0 auto; /* Ensure alignment in the center */
+}
+
+/* Button and Anchor Styling */
+.category-bar button {
+    background-color: #2e2e2e;
+    color: #ccc;
+    border: 1px solid #444;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+    flex: 1 1 calc(20% - 0.8rem);
+    text-align: center;
+}
+
+.category-bar button a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    font-size: inherit;
+}
+
+.category-bar button:hover {
+    background-color: #444;
+    border-color: #00bcd4;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Bank Offers Section */
+.bank-offers {
+    background-color: #333; /* Dark background for contrast */
+    color: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-top: 2px solid #444; /* Border on top for separation */
+}
+
+.bank-offers .offer-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.bank-offers h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #00bcd4; /* Highlight color for emphasis */
+    text-transform: uppercase;
+}
+
+.bank-offers p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #ccc; /* Light gray text */
+}
+
+.offer-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 buttons per row */
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.offer-buttons button {
+    background-color: #00bcd4; /* Bright accent color */
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.offer-buttons button:hover {
+    background-color: #0097a7; /* Darker shade of the button color */
+}
+
+.offer-buttons .explore-offers {
+    grid-column: span 2; /* Make the last button span the full width */
+    background-color: #444; /* Lighter button for "Explore More Offers" */
+}
+
+.offer-buttons .explore-offers:hover {
+    background-color: #333; /* Darker hover color for the "Explore More" button */
+}
+/* Common Styles for Product Sections */
+section {
+    padding: 3rem 1rem;
+    background-color: #1a1a1a;
+    color: #fff;
+    border-top: 2px solid #444;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    color: #00bcd4;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.section-header p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* Featured Products Section */
+.featured-products .products-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+.featured-products .product-card {
+    background-color: #2e2e2e;
+    padding: 0.5rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    max-width: 300px;
+}
+.featured-products .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    border: 1px solid #00bcd4;
+}
+
+
+.featured-products .product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    height: 300px;
+    width: 300px;
+}
+
+.featured-products .product-card h3 {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    color: #fff;
+}
+
+.featured-products .product-card .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.featured-products .product-card .discount {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.featured-products .product-card button {
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.featured-products .product-card button:hover {
+    background-color: #0097a7;
+}
+
+/* Bestsellers Section */
+.bestsellers .products-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+.bestsellers .product-card {
+    background-color: #2e2e2e;
+    padding: 0.5rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    max-width: 300px;
+}
+.bestsellers .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+    border: 1px solid #00bcd4;
+}
+
+.bestsellers .product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    height: 300px;
+    width: 300px;
+}
+
+.bestsellers .product-card h3 {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    color: #fff;
+}
+
+.bestsellers .product-card .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.bestsellers .product-card button {
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.bestsellers .product-card button:hover {
+    background-color: #0097a7;
+}
+.bestsellers .product-card button:active {
+    border: 2px solid blue;
+    background-color: #44deef;
+}
+/* Deals on TechHive Appliances Section */
+.deals-appliances {
+    background-color: #1a1a1a;
+    color: #ccc;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.deals-appliances h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #00bcd4; /* Highlighted teal color */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Layout for deals */
+.deals-list {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Ensure proper spacing */
+    gap: 1.5rem; /* Add spacing between the items */
+    padding: 0 1.5rem; /* Add padding around the container */
+}
+
+.deal-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: whit;
+    border: 1px solid #444;
+    border-radius: 10px;
+    width: 50%; /* Each item takes 50% of the row */
+    padding: 1.5rem;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+.deal-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    border: 1px solid #00bcd4;
+}
+
+/* Content inside the deal-item */
+.deal-content {
+    width: 50%; /* Content takes up half of the deal-item */
+    padding-right: 1rem; /* Adds spacing between content and image */
+}
+
+.deal-content h3 {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 0.8rem;
+}
+
+.deal-content p {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #ccc;
+}
+
+.deal-content .price {
+    color: #00ff76;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.deal-content button {
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.deal-content button:hover {
+    background-color: #008c99;
+    box-shadow: 0 4px 15px rgba(0, 188, 212, 0.5);
+}
+
+/* Deal Image Styling */
+.deal-image {
+    width: 50%; /* Image takes up half of the deal-item */
+}
+
+.deal-image img {
+    max-width: 100%; /* Ensure image scales within its container */
+    border-radius: 8px;
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #1a1a1a; /* Dark background matching the theme */
+    color: #ccc;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #00bcd4; /* Highlight color */
+}
+
+.testimonial-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem; /* Space between testimonials */
+}
+
+.testimonial {
+    background-color: #2e2e2e;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: left;
+}
+
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: #ddd;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.testimonial-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #444;
+}
+
+.testimonial-author h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.testimonial-author p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+/* Footer Styling */
+footer {
+    background-color: #121111;
+    color: #ccc;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.footer-section {
+    flex: 1 1 30%;
+    max-width: 30%;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    color: #00bcd4;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.footer-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section form input {
+    padding: 0.5rem;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #2e2e2e;
+    color: #ccc;
+}
+
+.footer-section form button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #00bcd4;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-section form button:hover {
+    background-color: #008c9e;
+}
+
+.social-icons {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 45px;
+
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.8;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #00bcd4;
+}
+
+.footer-section p {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+/* For 2-column lists */
+.list-columns {
+    display: flex;
+    gap: 2rem;
+}
+
+.list-columns ul {
+    flex: 1;
+}
