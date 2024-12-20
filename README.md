@@ -7,6 +7,8 @@ Features:
 Responsive design for various screen sizes.
 Category-based navigation for easy browsing.
 Interactive UI elements with smooth hover and active states.
+
+
 Tech Stack:
 
 HTML: Structure of the website.
